@@ -7,7 +7,6 @@ const client = new Client({
     password: 'freebird',
     database: 'carshop'
 })
-
 client.connect();
 
 client.query('select * from employees', (err, res)=>{
